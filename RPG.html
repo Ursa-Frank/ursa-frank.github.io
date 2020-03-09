@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- comment -->
+		<title>Custom RPG</title>
+		
+		<meta name="description" content="A general guide on the use of meta tags in html pages">
+		<meta name="author" content="Shaumik Daityari">
+		<meta name="copyright" content="Arne Niklas Jansson">
+		<meta charset="UTF-8">
+		
+		<style type="text/css" >
+		Body {
+			font-family:  sans-serif;
+			font-size: 16px;
+			background-color:#0A1B70;
+		}
+		
+		a {
+			color: blue;
+			text-decoration: none;
+		}
+		
+		a:hover {
+			text-decoration: underline;
+		}
+		
+		a:active {
+			color: black;
+		}
+		
+		table, tr, th, td {
+			font-size: 14px;
+			font-weight: 400;
+			border-collapse: collapse;
+			border: 1px solid black;
+			padding: 2px 10px 4px;
+			margin: 10px auto;
+			background-color:#FFFFFF;
+		}
+		
+		th {
+			font-weight: 700;
+		}
+		
+		ul#ContentsList {
+			columns: 2;
+			-webkit-columns: 2;
+			-moz-columns: 2;
+		}
+		
+		div#FMenu {
+			position: fixed;
+			top: 10px;
+			right: 10px;
+			background-color:#E3ECFF;
+			border-style:solid;
+			border-color:#000000;
+			padding: 20px 20px 10px;
+			
+		}
+		
+		div#Document {
+			background-color:#E3ECFF;
+			width: 21cm;
+			border-style:solid;
+			border-color:#000000;
+			margin:  10px auto;
+			padding: 10px 30px;
+		}
+		
+		div#Footer {
+			color:#E3ECFF;
+			text-align: center;
+		}
+		</style>
+		
+	</head>
+	<body>
+		<div id="FMenu" id="Top">
+			<a href="#Top">Preface (Top of Page)</a></br>
+			<a href="#Top">How To Play</a></br>
+			<a href="#Top">Character Creation & Growth</a></br>
+			<a href="#Top">Boons, Abillities & Spells</a></br>
+			<a href="#Top">NPC's & Monsters</a></br>
+			
+			</br>
+		</div>
+		<div id="Document" id="PagePreface">
+			<h1>Custom RPG</h1>
+			<h4>(ongoing)</h4>
+			<p>At the start of 2020, I played my first game of Dungeons and Dragons. My first true Role Playing Game, as the DM no less.
+			Now, I've been playing video games since I was a kid and I've always had an interest in game theory/development/design. 
+			So the moment I started playing the game I already had ideas about various elements I wanted to tweak and change.
+			That's where this document comes into place. Somewhere where I can organise my many nitpicks, gripes and complaints and try to work towards some conclusions, 
+			be they just a collection of homebrew rules and additions or a full home built RPG. I'm honestly not sure yet</p>
+			<p>Just to clarify, at the time of writing this, Dungeons and Dragons 5th Edition is the only RPG I've played. I am aware of the other editions and roughly what the general 
+			opinion on them is, as well as some of the competing RPGs such as Pathfinder. I don't own any of those books yet though, so I don't know if any of the idea's shared in this document
+			overlap with any of those products. That being said, when I do eventually get them I may borrow some idea's</p>
+			</br>
+			<hr id="Goals">
+			</br>
+			<h3>Goals</h3>
+			<p>Well we've got to start somewhere, so how about a list of things I want to improve apon and go from there</p>
+			<p>In no particular order</p>
+			<ul>
+				<li>Expanded List of weapon (including crafted ones)</li>
+				<li>Expand Grappling/wrestling rules</li>
+				<li>Expand the Summoner play style</li>
+				<li>Make Sheilds less boring</li>
+				<li>Halflings and Gnomes are way to similar, Fix that</li>
+				<li>Stop utility Spells breaking curtain Play styles</li>
+				<li>Make more solid rules for mounts and familars</li>
+				<li>Remove Subclasses and just add more classes so multiclassing actually makes sence</li>
+				<li>Balence Multiclassing so its not inherentlly better than solo classing</li>
+				<li>Make Bigger monsters actually feel different</li>
+				<li>Expanded basic attacks</li>
+				<li>Improve Exhaustion</li>
+				<li>Add weapon/armor durabillity</li>
+				<li>Make sure one GM/one PC style games are accounted for in balancing</li>
+				<li>Expand Sidekicks</li>
+				<li>Make PC's feel less "God-like"</li>
+				<li>Make running away strategies more likely to happen and more viable</li>
+				<li>Include more balenced Critical succeeses/fail table (as an optional rule)</li>
+			</ul>
+			</br>
+			<hr id="Contents">
+			</br>
+			<h3>Contents</h3>
+			<ul id="ContentsList">
+				<li><a href="#QuickChanges">Quick Changes</a></li>
+				<li><a href="#CreatingACharacter">Creating A Character</a>(n/a)</li>
+				<li><a href="#Races">Races</a>(n/a)</li>
+				<li><a href="#Classes">Classes</a>(n/a)</li>
+				<li><a href="#Backgounds">Backgounds</a>(n/a)</li>
+				<li><a href="#PlayingTheGame">Playing The Game</a>(n/a)</li>
+				<li><a href="#Equipment">Equipment</a>(n/a)</li>
+				<li><a href="#Conditions">Conditions</a>(n/a)</li>
+				<li><a href="#Boons">Boons</a>(n/a)</li>
+				<li><a href="#Abillities">Abillities</a>(n/a)</li>
+				<li><a href="#Spell">Spells</a>(n/a)</li>
+				<li><a href="#Familars">Familars</a>(n/a)</li>
+				<li><a href="#Creatures">Creatures</a>(n/a)</li>
+			</ul>
+			</br>
+			<hr>
+			</br>
+			<h3 id="QuickRules">Quick Rules</h3>
+			<p>I think the standard rule of using a 20 to check if you succeed in doing something is perfectly fine as is, however I want to
+			include add item durabillity as a feature and I think the best way to introduce that as a mechanic would be as part of the attack roles.
+			So when Rolling to attack, follow the grid to determin extra effects of the attack</p>
+			<table>
+				<tr><th>Role</th><th>Damage</th><th>Target</th></tr>
+				<tr><td> 1</td><td>3</td><td>Attacker's Weapon</td></tr>
+				<tr><td> 2</td><td>1</td><td>Attacker's Weapon</td></tr>
+				<tr><td>19</td><td>1</td><td>Opponent's Armor </td></tr>
+				<tr><td>20</td><td>3</td><td>Opponent's Armor </td></tr>
+			</table>
+			<ul>
+				<li>The durabillity of weapons and armor is displayed on their respective item tables</li>
+				<li>If the attacker is attacking with a body part, they take the damage from rolling a 1 or 2</li>
+				<li>A Magic user's spellcasting focus is their weapon</li>
+				<li>Natural Armor cannot break</li>
+			</ul>
+			<p></p>
+			</br>
+			</br>
+			</br>
+			</br>
+		</div>
+		<div id="Document" id="PageHowToPlay">
+			<h3>Contents</h3>
+		</div>
+		<div id="Document" id="PageCharacter">
+			<h3>Contents</h3>
+		</div>
+		<div id="Document" id="PageAbilities">
+			<h3>Contents</h3>
+		</div>
+		<div id="Document" id="PageMonsters">
+			<h3>Contents</h3>
+		</div>
+		<div id="Footer">
+			<p>© Copyright 2020 Paul F O'Connell "UrsaFrank"</p>
+		</div>
+	</body>
+</html>
