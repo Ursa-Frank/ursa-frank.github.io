@@ -3,4 +3,4 @@
 Really Early Tests and Ideas.
 I wouldn't even call this pre-alpha
 
-https://ursa-frank.github.io/
+ursa-frank.github.io
